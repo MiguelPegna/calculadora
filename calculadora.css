@@ -1,0 +1,163 @@
+*{
+    padding: auto;
+    margin: auto;
+    box-sizing: border-box;
+    font-size: 24px;
+}
+body {
+    background-image: radial-gradient(circle at 6.72% 101.58%, #5e7c82 0, #5d7579 10%, #5d6e6f 20%, #5c6666 30%, #5b5d5d 40%, #595455 50%, #564b4e 60%, #534249 70%, #4e3b46 80%, #4a3443 90%, #452f42 100%);
+    background-attachment: fixed;
+    padding: 20px 0;
+}
+.full-c{
+    /*formato de caja*/
+    margin: auto;
+	display: flex;  
+	width: 400px;
+    height: auto;
+    border: 1px dotted gray;
+    background-color: #141518;
+    /*propiedades flex*/
+	flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow:0.20rem 0.20rem 0.41rem rgba(0, 0, 0, 0.2);
+}
+.input-bloque{
+	padding: 1rem;
+	width: 100%;
+    justify-content: flex-end;
+    display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+    background-color:#141518;
+}
+.input-r{
+    width: 100%;
+    padding: 15px 5px 5px;
+    text-align: right;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 5px double rgb(247, 10, 10);
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    background-color: #141518;
+    color: #fff;
+}
+
+.buttons-row{
+	width: 75%;
+    display: flex;
+	flex-flow: row wrap;
+    padding:6px 0;
+    justify-content: space-between;
+    background-color: #4b4b4b;
+} 
+
+
+.buttons-column{
+    display: flex;
+    width: 25%;
+	flex-flow: column wrap;
+    align-items: center;
+    background-color: #767777;
+
+}
+
+.buttons-row button {
+    margin: 1px 0;
+    border-radius:20px;
+    width: 95px;
+    height: 60px;
+    cursor:pointer;
+    color: #fff;
+    background-color: #4b4b4b;
+}
+
+.buttons-row button:hover {
+    cursor:pointer;
+    color: #1766cd;
+    background-color: #6d6e6e;
+}
+
+.buttons-column button {
+    margin: 1px 0;
+    border-radius:20px;
+    width: 90px;
+    height: 50px;
+    cursor:pointer;
+    color: #fff;
+    background-color: #767777;
+}
+.buttons-column button:hover {
+    cursor:pointer;
+    color: #1766cd;
+    background-color: #9ca0a1;
+}
+.buttons-row .igualf {
+    background-color: rgb(25, 118, 210);
+    color: white;
+}
+.buttons-row .igualf:hover {
+    background-color: rgb(11, 97, 184);
+    color: white;
+}
+.pie{
+    color: #fff;
+    padding: 10px 0;
+    font-size: 12px;
+    width: 400px;
+    background-color:#141518;
+    display: flex;
+	flex-flow: row nowrap;
+    justify-content: center;
+}
+@media screen and (max-width: 360px) {
+    body {
+        padding: 0;
+        margin: auto; 
+    }
+    .full-c{
+        width:100%;
+        margin: 0 auto;
+        padding: auto;
+    }
+    .input-bloque{
+        padding: 1rem;
+        width: 100%;
+        justify-content: flex-end;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color:#141518;
+        max-width: 360px;
+        min-width: 360px;
+    }
+    .buttons-row{
+        width: 80%;
+        padding: 0 30px;
+	    flex-flow: row wrap;
+        justify-content: space-between;
+        background-color: #4b4b4b;
+        max-width: 360px;
+        min-width: 360px;
+        order: 2;
+        
+    } 
+
+    .buttons-column{
+        display: flex;
+        width: 25%;
+        flex-flow: row nowrap;
+        align-items: center;
+        max-width: 360px;
+        min-width: 360px;
+        order:1;
+    }
+    .pie{
+        width: 100%;
+        flex-flow: row nowrap;
+        align-items: center;
+        order:3;
+    }
+}
